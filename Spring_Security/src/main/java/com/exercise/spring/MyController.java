@@ -10,7 +10,7 @@ public class MyController {
 	
 	@RequestMapping("/")
 	public @ResponseBody String root() throws Exception {
-		return "Security-loginForm";
+		return "Security-loginForm_withCheckSum";
 	}
 	
 	@RequestMapping("/guest/welcome")
@@ -37,9 +37,9 @@ public class MyController {
 		return "security/loginForm";
 	}
 	
-	@RequestMapping("/loginError")
-	public String loginError() {
-		
-		return "security/loginError";
-	}
+//	@RequestMapping("/loginError")
+//	public String loginError() {
+//		
+//		return "security/loginError";
+//	}
 }
